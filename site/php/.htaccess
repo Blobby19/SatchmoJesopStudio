@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Access to /php"
+AuthUserFile /kunden/homepages/5/d453415350/htpasswd
+Require user satchmo

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* CSS Document */
+
+p { font-family: Helvetica, sans-serif; font-size:11px; color:#000; margin-left: 5px; margin-top:0; margin-bottom:0; }
+a { font-family: Helvetica, sans-serif; font-size:12px; color:#000; text-decoration:none; }
+a:hover { color:#fff; }
+
+
+/* IMPORTANT */
+	html {
+		height: 100%;
+	}
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	#page-table {
+		height: 100%;
+		width: 100%;
+		border-collapse: collapse;
+		text-align: center;
+	}
+	#page-td {
+		height: 100%;
+		padding: 0;
+		vertical-align:bottom;
+	}
+	div#global {
+		width: 380px;
+		text-align: left;
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}

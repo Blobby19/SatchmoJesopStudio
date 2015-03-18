@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+p, h1, h2, dl, dt, dd {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+h1.myH1, a.myA, h2.myH2 {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* GENERALE */
+body { 
+	margin-left: auto; 
+	margin-right: auto; 
+	}
+	
+#global {
+	position: absolute; 
+	left: 50%; 
+	margin-left: -490px;
+	margin-top: 20px;
+	width: 950px; 
+	overflow: none;
+}
+
+a.myA {
+	text-decoration:none;
+
+}
+
+p { 
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#333333;
+	letter-spacing: 1px;
+}
+
+h1.myH1	{
+	font-family: Helvetica, sans-serif;
+	font-size: 25px;
+	font-weight:bolder;
+	color : #000000;
+	line-height: 22px;
+	margin: 0;
+	}
+
+h2.myH2	{
+	font-family: Helvetica, sans-serif;
+	font-size: 14px;
+	color : #000000;
+	line-height: 16px;
+	}
+
+#leftcol {
+	width: 250px;
+	height: 500px;
+	float:left;
+	margin-top: 20px;
+}
+
+#menu {
+	width: 250px;
+	height: 250px;
+	float:left;
+	margin-left: 40px;
+}
+
+#profil {
+	width: 240px;
+	height: 210px;
+	float: left;
+    position:relative;
+    overflow:hidden;
+    background-color:#fff;
+}
+
+#rightcol {
+	width: 700px;
+	height: 460px;
+	float:left;
+}
+
+#container {
+	width: 700px;
+	height: 460px;
+	float:left;
+	background-color:#CCCCCC;
+	margin-top: 20px;
+	text-align:center;
+	color:#666666;
+}
+
+/* MENU */
+ul#logo{
+    list-style:none;
+    position:absolute;
+
+}
+ul#logo li{
+    float:left;
+}
+ul#logo a{
+    cursor:pointer;
+    position:relative;
+    float:left;
+    bottom:-95px;
+    width:250px;
+}
+
+ul#logo span.title{
+    display:block;
+    height:50px;
+}
+ul#logo span.description{
+    width:250px;
+	height:40px;
+    color:#333333;
+    display:block;
+}
+ul#logo a:hover span.description{
+    background-color:#fff;
+}
+ul#logo a:hover span.title{
+    color:#54504F;
+}
+
+
+#footer {
+    width: 950px;
+    height: 20px;
+    float:left;
+    padding-left: 40px;
+}
+
+#login {
+    position: absolute; 
+    left: 50%; 
+    margin-left: 450px;
+}

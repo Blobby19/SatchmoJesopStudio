@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+p, h1, h2, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+h1.myH1, a.myA, h2.myH2, h3.myH3, dd.myDd {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration:none;
+}
+
+.myH1 {
+color: black;
+}
+
+.myH1.clicked {
+color: #00aeef;
+}
+
+/* GENERALE */
+#global {
+    margin-top: 20px;
+    width:980px;
+		margin-left: -40px;
+}
+
+a.myA,a.myA:link  {
+    text-decoration:none;
+}
+
+p { 
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:10px;
+    color:#333333;
+    letter-spacing: 1px;
+}
+
+h1.myH1	{
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight:bolder;
+    color : #000000;
+    line-height: 25px;
+    margin: 0;
+}
+
+h2.myH2	{
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    color : #000000;
+    line-height: 16px;
+}
+
+h3.myH3 { 
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:9px;
+    color:#333333;
+}
+
+h3 a { 
+    color:#333333;
+	text-decoration:none;
+}
+
+
+
+/* COLONNE GAUCHE */
+
+#leftcol {
+    width: 280px;
+    height: 500px;
+    float:left;
+    margin-top: 20px;
+
+}
+
+#menu {
+    width: 280px;
+    height: 250px;
+    float:left;
+	margin-left: 40px;
+}
+
+#profil {
+    width: 280px;
+    height: 250px;
+    float: left;
+    position:relative;
+    overflow:hidden;
+    background-color:#fff;
+}
+#logo {
+    width: 100px;
+    height: 65px;
+    float: left;
+	cursor:pointer;
+}
+#info {
+    width: 240px;
+    float: left;
+	font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#333333; line-height:11px;
+}
+#info a {
+	color:#00aeef;
+}
+
+
+/* COLONNE DROITE */
+#rightcol {
+    width: 666px;
+    height: 450px;
+    float:left;
+}
+
+#container {
+    width: 657px;
+    height: 414px;
+    float:left;
+    
+    margin-top: 20px;
+    text-align:center;
+    color:#666666;
+}
+
+@media only screen and (min-width:1000px) {
+    #container {
+        width: 730px;
+		height: 460px;
+        float:left;
+
+        margin-top: 20px;
+        text-align:center;
+        color:#666666;
+    }
+	
+    #global {
+        margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+        width: 1024px; 
+    }
+	
+    #rightcol {
+        width: 740px;
+        height: 500px;
+        float:left;
+    }
+    #footer {
+		z-index:1;
+        width: 1024px;
+        height: 100px;
+        float:left;
+        padding-left: 40px;
+		background-color:#FFFFFF;
+    }
+}
+
+/* PIED DE PAGE */
+#footer {
+	z-index:1;
+    width: 960px;
+    height: 100px;
+    float:left;
+    padding-left: 40px;
+	background-color:#FFFFFF;
+}
+
+#login {
+    position: absolute; 
+    left: 50%; 
+    margin-left: 450px;
+}
+
+/* Legende */
+#legende { font-family: Helvetica, sans-serif; font-size:10px; color:#999999; margin-top: 4px; height: 20px;}

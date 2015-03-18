@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html40/strict.dtd">
+<script language="javascript" src="_js/jquery-1.4.2.min.js"></script>
+
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#logo").click(function () {
+        $("#infocontact").slideToggle("slow");
+    });
+});
+
+</script>
+
+<html>
+<head>
+<meta name="robots" content="noindex, nofollow">
+<title>Satchmo Jesop Studio</title>
+<meta name="description" content="Bienvenue sur le site de Satchmo Jesop, photographe entre Paris et Genève.">
+<meta name="keywords" content="photo, photographe, photographie, BILD, Carnets, dessin, drafts, architecture, exposition, musée, papier, pliage,coffret, newyork, paris, geneve, lausanne, epfl, ecole d'architecture, edition, livre, album, rendu">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/gif" href="images/favicon/satchmo.gif">
+<link rel="stylesheet" media="screen" type="text/css" href="css/satchmo.css" />
+</head>
+<body>
+<div id="global">
+
+<div id="leftcol">
+<script type="text/javascript">
+	$(document).ready(function() {
+		// Au chargement, on cache tous les dd
+		$('dl dd').hide();
+		// Au clic
+		$('dl dt').css('cursor', 'pointer').click( function() {
+			// On ajoute la classe "visible" aux dd associés au dt cliqué, s'ils sont déjà visibles
+			if ($(this).nextUntil('dt').is('dd:visible'))
+				$(this).nextUntil('dt').addClass('visible');
+			// On cache tous les dd
+			$('dl dd').slideUp();
+			// On ferme les dd associés au dt cliqué ayant la classe "visible" (ils étaient ouvert dans les cache)
+			if ($(this).nextUntil('dt').is('dd.visible'))
+				$(this).nextUntil('dt').removeClass('visible').slideUp();
+			// On ouvre les dd associés au dt cliqué qui étaient fermés
+			else
+				$(this).nextUntil('dt').slideDown();
+		});
+	});
+	</script>
+	<div id="menu">
+    
+    <dl>
+    <dt><h1>RENDERINGS</h1></dt>
+        <dd><a href="#"><h2>Exemple 1</h2></a></dd>
+    <dt><h1>PHOTOS</h1></dt>
+        <dd><h2>Exemple 1</h2></dd>
+        <dd><h2>Exemple 2</h2></dd>
+        <dd><h2>Exemple 3</h2></dd>
+    <dt><h1>GALLERY</h1></dt>
+        <dd><h2>Exemple 1</h2></dd>
+        <dd><h2>Exemple 2</h2></dd>
+        <dd><h2>Exemple 3</h2></dd>
+    <dt><h1>GOODIES</h1></dt>
+        <dd><h2>Exemple 1</h2></dd>
+    <dt><h1>TEACHING</h1></dt>
+        <dd><h2>Exemple 1</h2></dd>
+    <dt><h1>LARGESCALE</h1></dt>
+        <dd><h2>Exemple 1</h2></dd>
+        <dd><h2>Exemple 2</h2></dd>
+        <dd><h2>Exemple 3</h2></dd> 
+        </dl> 
+        </div>
+        
+        <div id="profil">
+            <!--<ul id="logo">
+                <li>
+                    <a>
+                        <span class="title"><img src="images/satchmojesopstudio-logo.jpg" alt="satchmo jesop studio photo" width="100"></span>
+                        <span class="description"><p><a>pdf portfolio</a>5 route de Drize<br />1227 CAROUGE<br />SWITZERLAND<br />00 41 78 48 46 767<br />info@satchmojesopstudio.com</p></span></a></li>
+            </ul> -->
+        </div>
+</div>
+<div id="righttcol">
+
+	<div id="container">
+    <img src="images/test-image3.jpg" width="730">
+    </div>
+
+</div>
+<div id="footer"><h3>satchmojesopstudio.com ©MMXIII</h3></div>
+</div>
+ <script type="text/javascript">
+        $(function() {
+            $('#logo > li').hover(
+                function () {
+                    var $this = $(this);
+                    $('a',$this).stop(true,true).animate({
+                            'bottom':'-15px'
+                        }, 300);
+                    $('i',$this).stop(true,true).animate({
+                            'top':'-10px'
+                        }, 400);
+                },
+                function () {
+                    var $this = $(this);
+                    $('a',$this).stop(true,true).animate({
+                            'bottom':'-95px'
+                        }, 300);
+                    $('i',$this).stop(true,true).animate({
+                            'top':'50px'
+                        }, 400);
+                }
+            );
+        });
+        </script>
+</body>
+</html>

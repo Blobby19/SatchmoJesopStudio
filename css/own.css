@@ -1,0 +1,70 @@
+/* 
+    Document   : own
+    Created on : 9 févr. 2013, 14:12:08
+    Author     : luc
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.sidebar{
+    width: 180px;
+    margin: 30px 0 0;
+    padding: 0;
+    -webkit-border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.200);
+}
+
+.sidenav li{
+    padding-bottom: 2px;
+}
+
+.sidebar .presentation{
+    padding: 10px;
+}
+
+.gallery{
+    width:200px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.200);
+}
+
+h3.myAdminH3 {
+    color:  inactivecaption; 
+}
+
+.navSelect {
+    background-color: #00aeef;
+    color: #ffffff;
+}
+
+label {
+    display: block;
+    width: 150px;
+    float: left;
+}
+
+.animated {
+    margin-left: 0px;
+    transition-property:margin-left; 
+    transition-duration: 1s;
+	
+    -moz-transition-property:margin-left; 
+    -moz-transition-duration: 1s;
+	
+    -webkit-transition-property:margin-left; 
+    -webkit-transition-duration: 1s;
+	
+    -o-transition-property:margin-left; 
+    -o-transition-duration: 1s;
+}     
+   
+.animated:hover{
+    margin-left: 20px;
+}   
+
+/* Legende */
+#legende { font-family: Helvetica, sans-serif; font-size:10px; color:#999999; margin-top: 4px; height: 20px;}
